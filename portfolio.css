@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: rgb(145, 99, 99);
+}
+
+.projects-container {
+  /*background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 10%;
+  padding-bottom: 30px;
+}
+
+.portfolio-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 48%;
+  margin: 1%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  /*box-shadow: 0 8px 32px 0 rgba(0, 98, 128);*/
+}
+
+h2,
+h4,
+p {
+  padding: 5px;
+}
+
+.button-netlify {
+  border-radius: 10px;
+  background: #5abeec;
+  /*box-shadow: inset 37px 37px 74px #5a4d80, inset -37px -37px 74px #587bff;*/
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+  color: white;
+  margin-left: 65px;
+}
+
+.button-github {
+  border-radius: 10px;
+  background: #777575;
+  /*box-shadow: inset 37px 37px 74px #5a4d80, inset -37px -37px 74px #587bff;*/
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+  color: white;
+}
