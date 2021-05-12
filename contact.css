@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,900;1,100;1,400;1,500;1,600;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +8,86 @@
 
 body {
   font-family: "poppins", sans-serif;
+  background-color: black;
 }
 
 .wrapper {
   margin-right: 100px;
   margin-left: 100px;
-  background-color: rgb(145, 99, 99);
+  background-color: black;
   height: 100vh;
+  padding-top: 20px;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
 }
 
 .container {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 100px;
+}
+
+.contact-info {
+  max-width: 500px;
+  line-height: 65px;
+  padding-right: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+.contact-icons {
+  margin-right: 20px;
+  font-size: 30px;
+  color: rgb(48, 94, 219);
+}
+
+.github-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin-left: 50px;
+}
+
+.input {
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid rgb(48, 94, 219);
+  width: 550px;
+  height: 60px;
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.input-container textarea {
+}
+
+.btn-contact {
+  width: 150px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid rgb(48, 94, 219);
+  color: rgb(48, 94, 219);
+}
+
+.btn-contact:hover {
+  width: 150px;
+  height: 35px;
+  border-radius: 90px;
+  border: 2px solid rgb(48, 94, 219);
+  background-color: rgb(48, 94, 219);
+  color: white;
 }

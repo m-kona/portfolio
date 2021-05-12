@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,900;1,100;1,400;1,500;1,600;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +7,14 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "poppins", sans-serif;
+  background-color: black;
 }
 
 .wrapper {
   margin-right: 100px;
   margin-left: 100px;
-  background-color: rgb(145, 99, 99);
+  background-color: black;
   /*height: 100vh;*/
 }
 
@@ -21,6 +24,7 @@ body {
   justify-content: center;
   padding-top: 15px;
   font-size: 40px;
+  color: white;
 }
 
 .about-section {
@@ -44,10 +48,15 @@ body {
   margin-bottom: 15px;
 }
 
+.about-details h1 {
+  color: rgb(48, 94, 219);
+}
+
 .about-details .about-p {
   font-size: 17px;
   margin-bottom: 20px;
   margin-right: 50px;
+  color: white;
 }
 
 .name-details {
@@ -60,6 +69,7 @@ body {
 
 .name-age {
   display: grid;
+  color: white;
 }
 
 .name-age-1 {
@@ -68,6 +78,14 @@ body {
 }
 
 /* Resume Section */
+
+.about-h3 {
+  color: rgb(48, 94, 219);
+}
+
+.about-edu p {
+  color: white;
+}
 
 .about-resume {
   display: flex;
@@ -87,7 +105,6 @@ body {
   padding-bottom: 20px;
 
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
