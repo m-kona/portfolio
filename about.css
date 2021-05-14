@@ -18,13 +18,45 @@ body {
   /*height: 100vh;*/
 }
 
+.navbar-home {
+  background-color: transparent;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-link a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.navbar-link a:hover {
+  border-bottom: 3px solid rgb(48, 94, 219);
+}
+
+/* ------------------------------------------- */
+
 .about-heading {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 80px;
   font-size: 40px;
   color: white;
+  text-transform: uppercase;
 }
 
 .about-section {
@@ -77,6 +109,24 @@ body {
   font-size: 17px;
 }
 
+.cv-btn {
+  height: 30px;
+  width: 130px;
+  color: rgb(48, 94, 219);
+  background: transparent;
+  border: 2px solid rgb(48, 94, 219);
+  cursor: pointer;
+}
+
+.cv-btn:hover {
+  height: 30px;
+  width: 130px;
+  color: black;
+  background: rgb(48, 94, 219);
+  border: 2px solid rgb(48, 94, 219);
+  border-radius: 50px;
+}
+
 /* Resume Section */
 
 .about-h3 {
@@ -87,28 +137,56 @@ body {
   color: white;
 }
 
-.about-resume {
+/* Timeline */
+
+.about-resume-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-edu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 17px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* side 1 */
 
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.about-resume h1 {
+  color: rgb(48, 94, 219);
+  text-transform: uppercase;
+}
+
+.about-resume {
+  margin: 90px auto;
+  width: 360px;
+  border-left: 2px solid #ccc;
+  padding: 0 20px 0 30px;
+}
+
+.about-education {
+  background-color: #fff;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+/* side 2 */
+
+.about-resume-1 h1 {
+  color: rgb(48, 94, 219);
+  text-transform: uppercase;
+}
+
+.about-resume-1 {
+  margin: 90px auto;
+  width: 360px;
+  border-left: 2px solid #ccc;
+  padding: 0 20px 0 30px;
+}
+
+.about-education-1 {
+  background-color: #fff;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding-bottom: 20px;
 }
 
 .about-h3 {
@@ -117,6 +195,18 @@ body {
 
 /* Skills */
 
+.my-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .skill-section img {
-  height: 200px;
+  height: 150px;
+}
+
+.skill-section img:hover {
+  height: 100px;
 }

@@ -9,7 +9,7 @@
 body {
   font-family: "poppins", sans-serif;
   background-color: black;
-  background-image: url(./images/home-bg.png);
+  background-image: url(./images/home-pic.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   padding-top: 200px;
   text-transform: uppercase;
@@ -79,7 +79,8 @@ body {
 }
 
 .navbar-link {
-  padding-right: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -91,7 +92,7 @@ body {
 }
 
 .navbar-link a:hover {
-  border-bottom: 2px solid rgb(48, 94, 219);
+  border-bottom: 3px solid rgb(48, 94, 219);
 }
 
 /* About */
