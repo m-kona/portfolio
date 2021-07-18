@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/a549f23a3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="./index.html">Kona<span>fy</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <h1 class="contact-heading">Get in Touch</h1>
+      <div class="container">
+        <form
+          action="https://formspree.io/f/mvodkapj"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="input-container">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="input"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Contact No"
+              class="input"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="input"
+              required
+            />
+          </div>
+          <div class="input-container textarea">
+            <textarea
+              name="message"
+              placeholder="Type Your Message Here"
+              class="input"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" value="Send Message" class="btn-contact" />
+        </form>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-map-pin contact-icons"></i> Cape Town, South Africa
+          </p>
+          <p>
+            <i class="fas fa-envelope contact-icons"></i>
+            konamasibulele@gmail.com
+          </p>
+          <p><i class="fas fa-mobile-alt contact-icons"></i> 083 490 2290</p>
+          <p>
+            <a href="https://github.com/m-kona" class="github-link"
+              ><i class="fab fa-github contact-icons"></i>Github</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>&copy;2021 Masibulele Kona</p>
+      </div>
+    </footer>
+  </body>
+</html>

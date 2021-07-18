@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,900;1,100;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: black;
+  height: 100vh;
+}
+
+.wrapper {
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: black;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 95px;
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: black;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar .logo a span {
+  color: rgb(48, 94, 219);
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+  border-bottom: solid 3px rgb(48, 94, 219);
+}
+
+/* --------------------------------------- */
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.contact-info {
+  max-width: 700px;
+  line-height: 65px;
+  padding-right: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+.contact-icons {
+  margin-right: 20px;
+  font-size: 30px;
+  color: rgb(48, 94, 219);
+}
+
+.github-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin-left: 50px;
+}
+
+.input {
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid rgb(48, 94, 219);
+  width: 550px;
+  height: 60px;
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-contact {
+  width: 150px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid rgb(48, 94, 219);
+  color: rgb(48, 94, 219);
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  width: 150px;
+  height: 35px;
+  border-radius: 90px;
+  border: 2px solid rgb(48, 94, 219);
+  background-color: rgb(48, 94, 219);
+  color: black;
+}
+
+/* footer */
+
+.footer {
+  background-color: white;
+  margin-top: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.footer p {
+  font-size: 20px;
+}

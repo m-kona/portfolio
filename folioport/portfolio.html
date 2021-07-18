@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="./index.html">Kona<span>fy</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="portfolio-container">
+        <h1 class="heading-1">Portfolio</h1>
+        <h1 class="myproject-heading">My Projects</h1>
+      </div>
+      <div class="projects-container">
+        <!-- Project 1's buttons-->
+        <div class="card">
+          <img
+            src="./images/kona-forms2.png"
+            alt="contact-form"
+            class="card-image"
+          />
+          <h3>HTML/CSS Contact Form</h3>
+          <div class="div-button">
+            <a
+              href="https://kona-form.netlify.app"
+              download
+              class="button-netlify"
+              >Live</a
+            >
+            <a
+              href="https://github.com/m-kona/contact-form"
+              download
+              class="button-github"
+              >Github</a
+            >
+          </div>
+        </div>
+        <!-- Project 2's buttons-->
+        <div class="card">
+          <img
+            src="./images/Timeline.png"
+            alt="contact-form"
+            class="card-image"
+          />
+          <h3>HTML/CSS Timeline</h3>
+          <div class="div-button">
+            <a
+              href="https://kona-timeline.netlify.app"
+              download
+              class="button-netlify"
+              >Live</a
+            >
+            <a
+              href="https://github.com/m-kona/timeline-task"
+              download
+              class="button-github"
+              >Github</a
+            >
+          </div>
+        </div>
+        <!-- Project 3's buttons-->
+        <div class="card">
+          <img
+            src="./images/testimonial.png"
+            alt="contact-form"
+            class="card-image"
+          />
+          <h3>HTML/CSS Testimonials</h3>
+          <div class="div-button">
+            <a
+              href="https://kona-slide.netlify.app"
+              download
+              class="button-netlify"
+              >Live</a
+            >
+            <a
+              href="https://github.com/m-kona/owl-slider"
+              download
+              class="button-github"
+              >Github</a
+            >
+          </div>
+        </div>
+        <!-- Project 4's buttons-->
+        <div class="card">
+          <img
+            src="./images/fibonacci.jpg"
+            alt="contact-form"
+            class="card-image"
+          />
+          <h3>Python Convertor</h3>
+          <div class="div-button">
+            <a
+              href="https://github.com/m-kona/the-convertor"
+              download
+              class="button-github"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <section id="new-testimonial">
+        <h1 class="portfolio-heading">Testimonials</h1>
+
+        <div class="project-container"></div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>&copy;2021 Masibulele Kona</p>
+      </div>
+    </footer>
+
+    <script>
+      let projects = [
+        {
+          imgURL: "./images/C8 Apr21 Retsepile Koloko (2).JPG",
+          title: "Karabo .K",
+          techStack: "Colleague",
+          description:
+            "Well dedicated in his work. Very humble and caring, and always willing to help",
+        },
+        {
+          imgURL: "./images/Godwin.png",
+          title: "Godwin .D",
+          techStack: "Head of Curriculum and Learning",
+          description:
+            "I seem to learn something new about Masibulele every day. I enjoy watching him co-operate with his classmates during group tasks. As long as he stays focused in his studies, Masibulele will improve steadily.",
+        },
+        {
+          imgURL: "./images/C8 Apr21 Gideon Daniels (2).JPG",
+          title: "Gideon .D",
+          techStack: "Colleague",
+          description:
+            "Masibulele is smart and honest. He is always curious and confident in himself. He has a positive attitude when it comes to solving problems.",
+        },
+        {
+          imgURL: "./images/thapza.jpeg",
+          title: "Thapelo .T",
+          techStack: "Lecturer",
+          description:
+            "Masibulele is a great student who always puts in an effort. He has great communication skills and great personality traits for a good developer.",
+        },
+      ];
+
+      function createCard(card) {
+        let createdCard = `<div class="project-card" techStack=${card.techStack} >
+        <img src="${card.imgURL}" alt="${card.imgALT}">
+        <h2>${card.title}</h2>
+        <h5>${card.techStack}</h5>
+        <p>${card.description}</p>
+      </div>
+    `;
+        return createdCard;
+      }
+
+      function renderCards() {
+        let projectContainer = document.querySelector(".project-container");
+        for (project of projects) {
+          let card = createCard(project);
+          projectContainer.innerHTML += card;
+        }
+      }
+
+      renderCards();
+
+      function filterCards(category) {
+        let cards = document.getElementsByClassName("project-card");
+        if (category == "All") {
+          for (card of cards) {
+            card.style.display = "block";
+          }
+          return;
+        }
+        for (card of cards) {
+          console.log(card);
+          card.style.display = "none";
+        }
+
+        let selectedCards = document.querySelectorAll(
+          `[techStack='${category}']`
+        );
+
+        for (card of selectedCards) {
+          card.style.display = "block";
+        }
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 111,
+          loop: true,
+          stagePadding: 90,
+          dots: false,
+          autoplay: true,
+        });
+      });
+    </script>
+  </body>
+</html>
